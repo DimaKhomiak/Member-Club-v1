@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Welcome to the Club</title>
+</head>
+
+<body>
+
+    <h1 class="main-title">Welcome to the Club!</h1>
+    <div class="main-content">
+        <form class="main-content-form" action="" method="">
+            <fieldset class="main-content-form-fieldset">
+                <legend class="main-content-form-legend">New member</legend>
+
+                <div class="main-content-form-block">
+
+                    <div class="main-content-form-block-labels">
+                        <div class="main-content-form-block-label-item">
+                            <label for="name">Name: </label>
+                        </div>
+                        <div class="main-content-form-block-label-item">
+                            <label for="email">Email: </label>
+                        </div>
+                    </div>
+
+                    <div class="main-content-form-block-inputs">
+                        <div class="main-content-form-block-input-fiels">
+                            <div class="main-content-form-block-input-item">
+                                <input class="input-text" id="Name" type="text" name="name" id="name" placeholder="Enter your name" onchange="onChangeNameFunction()">
+                            </div>
+                            <div class="main-content-form-block-input-item">
+                                <input class="input-text" id="Email" type="email" name="email" id="email" placeholder="Enter your email" onchange="onChangeEmailFunction()">
+                            </div>
+                        </div>
+                        <div class="main-content-form-block-input-buttons">
+                            <div class="main-content-form-block-input-button-add">
+                                <button class="input-submin" type="button" onclick="addUserClick()">Add</button>
+                            </div>
+                            <div class="main-content-form-block-input-button-clear">
+                                <button class="input-submin" type="button" onclick="ClearFieldsCLick()">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--!-->
+
+                    <div class="main-content-form-block-labels">
+                        <div class="main-content-form-block-label-item">
+                            <label for="name-error" class="error-label" id="error-name-label"></label>
+                        </div>
+                        <div class="main-content-form-block-label-item">
+                            <label for="email-error" class="error-label" id="error-email-label"></label>
+                        </div>
+                    </div>
+                    <!--!-->
+
+                </div>
+            </fieldset>
+        </form>
+
+        <div class="main-content-table" id="main-content-table"></div>
+
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
